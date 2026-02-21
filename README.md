@@ -54,6 +54,24 @@ pip install -r requirements.txt
 
 ```
 
+### Quick Start
+
+Generate query/document embeddings using our model with the provided script:
+
+```bash
+python src/scripts/quick_start.py \
+  --model_path ./outputs/laser-qwen3-0.6b/checkpoint-1276-merged \
+  --query "why is the sky blue" \
+  --doc "Rayleigh scattering makes short wavelengths scatter more strongly" \
+  --num_thinking_steps 3
+```
+
+This script prints:
+- query embedding shape
+- doc embedding shape
+- cosine similarity between the two embeddings
+
+
 ### Training
 
 LaSER training is built on a vendored Tevatron codebase.
