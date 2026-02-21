@@ -1,0 +1,13 @@
+torch
+transformers
+datasets
+openai
+tiktoken
+accelerate
+peft
+deepspeed
+flash
+modelscope
+faiss-cpu
+numpy
+mteb==1.38.32
